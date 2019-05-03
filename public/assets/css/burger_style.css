@@ -1,0 +1,210 @@
+.jumbotron {
+    margin-top: 180px;
+  }
+  
+  .add-bg {
+    background-color: orange;
+    width: 100%;
+  }
+  
+  li {
+    padding: 5px;
+    margin: 5px;
+    background: #f7b946;
+  }
+  #header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 64px;
+  }
+  
+  ul {
+  
+    list-style-type:none;
+  }
+  .label {
+    font-weight: bold;
+  }
+  #add-form {
+    text-align: center;
+  }
+  
+  .dev-burger-list {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #e07a04;
+    width: 40%;
+    background-color: #ffac13;
+  }
+  
+  .burger-list {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #e07a04;
+    width: 40%;
+    background-color: #ffac13;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  /* burger animation */
+  .burger,
+  .bun,
+  .onion,
+  .lettuce,
+  .cheese,
+  .ham,
+  .bun2,
+  .tomato,
+  .melt {
+    position: absolute;
+  }
+  
+  .burger {
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .bun {
+    width: 180px;
+    height: 55px;
+    background: #DF7B30;
+    border-radius: 100px 100px 0 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 8%);
+    background-size: 80px 35px;
+    background-position: -20px 2px, 5px -3px, -10px 20px, 35px -10px, 65px 2px, 100px -5px, 120px 15px;
+    background-repeat: no-repeat;
+    border-top: 4px solid #ce912f;
+  }
+  
+  .face {
+    z-index: 900;
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 100%;
+  }
+  .rteye {
+      z-index: 900;
+      position: absolute;
+      left: 80px;
+      width: 10px;
+      height: 10px;
+      background: #333;
+      border-radius: 100%;
+    }
+  .mouth {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 3px solid;
+    border-color: transparent #333 #333 transparent;
+    border-radius: 100%;
+    transform: rotate(44deg);
+  }
+  
+  .tomato {
+    top: 163px;
+    width: 170px;
+    height: 9px;
+    background: #E83330;
+    margin-left: 5px;
+    border-radius: 100px;
+    border-bottom: 4px solid #940c0e;
+  }
+  
+  .onion {
+    top: 180px;
+    width: 170px;
+    height: 8px;
+    background: #9E3D6D;
+    margin-left: 5px;
+    border-bottom: 4px solid #7e1846;
+  }
+  
+  .lettuce {
+    top: 195px;
+    width: 180px;
+    height: 8px;
+    background: #6DA000;
+    border-radius: 3px;
+    border-bottom: 3px solid #0f6d12;
+  }
+  
+  .cheese {
+    z-index: 600;
+    top: 210px;
+    width: 180px;
+    height: 15px;
+    background: #FFB400;
+    border-radius: 4px;
+  }
+  
+  .down-arrow {
+    margin-left: 120px;
+    margin-top: 14px;
+    border-color: #ffb400 transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+  }
+  
+  .ham {
+    top: 227px;
+    width: 183px;
+    height: 25px;
+    background: #9D4845;
+    border-radius: 100px;
+    box-shadow: inset -5px -5px 5px rgba(68, 68, 68, 0.3);
+    border-bottom: 6px solid #402408;
+  }
+  
+  .bun2 {
+    top: 260px;
+    width: 180px;
+    height: 30px;
+    background: #DF7B30;
+    border-radius: 0 0 100px 100px;
+  }
+  
+  .melt {
+    z-index: 200;
+    top: 0px;
+    left: 30px;
+    width: 10px;
+    height: 55px;
+    background: #FFB400;
+    border-radius: 100px;
+    animation: 8s melting ease infinite;
+  }
+  
+  .melt2 {
+    z-index: 200;
+    position: absolute;
+    content: '';
+    left: 50px;
+    width: 8px;
+    height: 40px;
+    background: #FFB400;
+    border-radius: 100px;
+    animation: 5s melting ease infinite;
+  }
+  
+  @keyframes melting {
+    100% {
+      transform: translateY(10px)
+    }
+  }
